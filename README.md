@@ -16,11 +16,13 @@ pci_diag.cs - The main file, which demonstrates controlling a PCI device using t
 **readme.pdf** - Describes the sample files.
 
 We provide several methods for compiling this code:
+
 **Compiling this project using Microsoft Visual Studio/Visual Studio Code**
 - If you are using Microsoft Visual Studio 2017 or higher, or Visual Studio Code, make sure to have CMake support installed for it.
 - When you open the sample folder (with File->Open->Folder...) or open the CMakeLists.txt file (with File->Open->CMake...), VisualStudio will automatically invoke the cmake command to generate a CMake cache for the project. To generate cache manually, press the 'Switch between solutions and available views' button, right click on the CMake project and select 'Generate Cache'.
  - Expand the CMake project - all available targets for the project will be listed.
  - Right clicking on the target will allow you to build it.
+ - 
 **Compiling using a different IDE/Compiler:**
 Run the following command in the terminal from the working directory of the project:
 $ cmake . -B build
@@ -31,6 +33,7 @@ $ VERBOSE=1 make
 or if you prefer the build to always be verbose you can generate the CMake cache in the following way:
 $ cmake . -B build -DCMAKE_VERBOSE_MAKEFILE=ON
 You can use CMake to generate projects for various other platforms and IDEs. Consult CMake's documentation for more information.
+
 **Compiling this project using dotnet:**
 Build
 Run the following command from the directory containing the .csproj file:
